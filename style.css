@@ -1,0 +1,53 @@
+body{
+  perspective: 2000px;
+
+}
+
+.cube{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+
+.cube *{
+  width: 200px;
+  height: 200px;
+  background: #555;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.6;
+  /* background: url(https://d298hcpblme28l.cloudfront.net/images/products/5bda190be458d874aaa6aa684b3ad97c.jpg) fixed; */
+  background: url(https://images.freecreatives.com/wp-content/uploads/2016/06/Memphis-seamless-pattern-Vector.jpg) fixed;
+  /* background: url(../seriousPortfolio/img/triangle.gif); */
+  background-size: 200px;
+  backface-visibility: visible;
+}
+
+.cube #side1{
+  transform: translate3d(-50%, -50%, 100px);
+}
+
+.cube #side2{
+  transform: translate3d(0, -50%, 0) rotate3d(0, 1, 0, 90deg);
+}
+
+.cube #side3{
+  transform: translate3d(-100%, -50%, 0) rotate3d(0, 1, 0, -90deg);
+}
+
+.cube #side4{
+  transform: translate3d(-50%, -100%, 0) rotate3d(1, 0, 0, 90deg);
+}
+
+.cube #side5{
+  transform: translate3d(-50%, 0, 0) rotate3d(1, 0, 0, -90deg);
+}
+
+.cube #side6{
+  transform: translate3d(-50%, -50%, -100px) rotate3d(1, 0, 0, 180deg);
+}
